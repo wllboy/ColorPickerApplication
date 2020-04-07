@@ -1,0 +1,10 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory app:title="Выбор цвета">
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            android:key="color_picker"
+            app:title="Выберите цвет"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

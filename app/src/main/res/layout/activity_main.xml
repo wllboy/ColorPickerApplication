@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activityMain"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/firstButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color picker №1"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        />
+    <Button
+        android:id="@+id/secondButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color picker №2"
+        android:layout_below="@id/firstButton"
+        android:layout_margin="5dp"
+        android:onClick="onClickButton"
+        />
+
+    <TextView
+        android:id="@+id/firstText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="First text"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/secondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second text"
+        android:textSize="40sp"
+        android:layout_below="@+id/firstText"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        />
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:onClick="openSettingsActivity"
+        />
+
+</RelativeLayout>
